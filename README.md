@@ -10,5 +10,5 @@ In the home page there are some service. these are from database. If you click o
 # there is extra gallery section. 
 
 
-[Live site link](https://rise-and-shine-grocery.web.app)
+[Live site link](https://sl-event.web.app)
 
