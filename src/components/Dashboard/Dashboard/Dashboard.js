@@ -18,7 +18,7 @@ const Dashboard = () => {
     
     
     useEffect(() => {
-        fetch('http://localhost:4000/services')
+        fetch('https://guarded-island-57940.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])

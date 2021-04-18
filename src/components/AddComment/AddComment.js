@@ -12,7 +12,7 @@ const AddComment = () => {
     const [comments, setComments] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:4000/comments')
+        fetch('https://guarded-island-57940.herokuapp.com/comments')
             .then(res => res.json())
             .then(data => setComments(data))
     }, [])
@@ -23,7 +23,7 @@ const AddComment = () => {
             comment: data.comment,
             imageURL: loggedInUser.photo
         };
-        const url = `http://localhost:4000/addComments`;
+        const url = `https://guarded-island-57940.herokuapp.com/addComments`;
         console.log('Comment data', CommentData);
         fetch(url, {
             method: 'POST',

@@ -7,7 +7,7 @@ const Testimonial = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     
     useEffect(() => {
-        fetch('http://localhost:4000/comments')
+        fetch('https://guarded-island-57940.herokuapp.com/comments')
             .then(res => res.json())
             .then(data => setComments(data))
     }, [])

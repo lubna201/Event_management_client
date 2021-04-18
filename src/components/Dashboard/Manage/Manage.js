@@ -6,7 +6,7 @@ const Manage = ({ service }) => {
     const [state,setState]=useState();
     const deleteEvent = name => {
         console.log('remove clicked', name);
-        const url = `http://localhost:4000/deleteService/${name}`;
+        const url = `https://guarded-island-57940.herokuapp.com/deleteService/${name}`;
         fetch(url, {
             method: 'DELETE',
         })
